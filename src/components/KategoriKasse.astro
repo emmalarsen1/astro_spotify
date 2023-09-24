@@ -1,0 +1,57 @@
+---
+const { title, imgPath, newRelease } = Astro.props;
+
+---
+
+
+  <article>
+    <h3>
+      <a href="#0">{title}</a>
+    </h3>
+    {newRelease && <p>NEW</p>}
+    <img src={imgPath} alt="" height="350" width="350" />
+      
+  </article>
+
+<style>
+  a{
+    z-index: 10;
+    position: relative;
+    margin-top: 40%;
+  }
+  p{
+    z-index: 10;
+    position: relative;
+  }
+  article {
+    position: relative;
+    padding: 0;
+    border-radius: var(--border-radius-medium);
+    transition: background 0.3s ease;
+    background-color: purple;
+    height: 103px;
+  width: 103px;
+  }
+
+  article:hover {
+    background: var(--surface-light-hover);
+  }
+
+  h3 a {
+    color: inherit;
+    overflow: visible;
+  }
+
+  img {
+  width: 54%;
+  height: auto;
+  rotate: 30deg;
+  margin-left: 49%;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--shadow-default);
+  }
+
+
+ 
+</style>

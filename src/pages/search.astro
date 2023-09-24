@@ -1,0 +1,31 @@
+---
+import "./index.astro"
+import "../styles/global.css"
+import MainLayouts from "../layouts/MainLayouts.astro";
+import ShelfSearch from "../components/ShelfSearch.astro";
+import KategoriKasse from "../components/KategoriKasse.astro";
+const showNewRelease = true;
+---
+<MainLayouts hasSearch={true}>
+  
+        <h2>Browse All</h2>
+       
+        <ShelfSearch>
+        <KategoriKasse title="HipHop" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="Jazz" imgPath="https://picsum.photos/id/14/350/350.webp" />
+        <KategoriKasse title="Summer Hits" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="Groovy" imgPath="https://picsum.photos/id/14/350/350.webp" />
+        <KategoriKasse title="Top 50" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="TikTok Songs" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="RnB" imgPath="https://picsum.photos/id/14/350/350.webp" />
+        <KategoriKasse title="Lorem" imgPath="https://picsum.photos/id/14/350/350.webp" />
+        <KategoriKasse title="Lorem" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="Lorem" imgPath="https://picsum.photos/id/14/350/350.webp" />
+        <KategoriKasse title="Lorem" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="Lorem" imgPath="https://picsum.photos/id/14/350/350.webp" newRelease= {true}/>
+        <KategoriKasse title="Lorem" imgPath="https://picsum.photos/id/14/350/350.webp" />
+    </ShelfSearch>
+    
+</MainLayouts>    
+
+
